@@ -1,0 +1,14 @@
+{
+  "name": "Estatuto Antiterrorista Explicado",
+  "short_name": "Estatuto",
+  "description": "El Estatuto Antiterrorista de Colombia explicado, con fuentes. Vibras Positivas HM.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0b1f3a",
+  "theme_color": "#0b1f3a",
+  "lang": "es-CO",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

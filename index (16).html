@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Estatuto Antiterrorista Explicado</title>
+<meta name="description" content="Qué propone el Estatuto Antiterrorista de Colombia (2026): registro de organizaciones terroristas, penas, trámite en el Congreso, quién lo apoya y quién lo critica. Explicado con fuentes.">
+<meta name="theme-color" content="#0b1f3a">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<meta property="og:title" content="Estatuto Antiterrorista de Colombia — explicado y con fuentes">
+<meta property="og:description" content="Lo que propone, lo que falta y lo que dicen ambos lados. Vibras Positivas HM.">
+<meta property="og:image" content="https://commons.wikimedia.org/wiki/Special:FilePath/Fachada_Capitolio.jpg?width=1200">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0b1f3a; --navy2:#13305a; --yellow:#fcd116; --blue:#003893; --red:#ce1126;
+  --bg:#f6f4ee; --card:#ffffff; --ink:#1a1f2b; --muted:#5d6475; --line:#e3dfd3;
+  --gov:#1f6feb; --crit:#c2410c; --ok:#15803d;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0c1220; --card:#141c2e; --ink:#e8ebf2; --muted:#9aa3b5; --line:#24304a;
+  }
+}
+:root[data-theme="dark"]{ --bg:#0c1220; --card:#141c2e; --ink:#e8ebf2; --muted:#9aa3b5; --line:#24304a; }
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:"Source Serif 4",Georgia,serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,.sans,nav,button,.chip,.stat b,.tl-date{font-family:"Archivo",system-ui,sans-serif}
+a{color:var(--blue)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) a{color:#7fb0ff}}
+:root[data-theme="dark"] a{color:#7fb0ff}
+.flag{height:6px;background:linear-gradient(90deg,var(--yellow) 0 50%,var(--blue) 50% 75%,var(--red) 75% 100%)}
+header.hero{position:relative;color:#fff;background:var(--navy);overflow:hidden}
+.hero-img{position:absolute;inset:0;background:url("https://commons.wikimedia.org/wiki/Special:FilePath/Fachada_Capitolio.jpg?width=1400") center/cover no-repeat;opacity:.35}
+.hero-in{position:relative;max-width:980px;margin:0 auto;padding:44px 16px 34px}
+.kicker{display:inline-block;background:var(--yellow);color:var(--navy);font-weight:900;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:3px}
+.hero h1{font-size:clamp(30px,7vw,54px);line-height:1.04;margin:14px 0 10px;font-weight:900;letter-spacing:-.01em}
+.hero p.lead{font-size:clamp(17px,2.6vw,20px);max-width:680px;margin:0 0 16px;opacity:.95}
+.status{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-family:Archivo,sans-serif;font-size:14px}
+.pill{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:5px 12px}
+.pill.warn{background:var(--red);border-color:var(--red);font-weight:700}
+.credit{position:relative;font-size:11px;opacity:.7;text-align:right;max-width:980px;margin:0 auto;padding:0 16px 8px;font-family:Archivo,sans-serif}
+nav{position:sticky;top:0;z-index:20;background:var(--navy);box-shadow:0 2px 10px rgba(0,0,0,.2)}
+nav .in{max-width:980px;margin:0 auto;display:flex;gap:4px;overflow-x:auto;padding:8px 12px;scrollbar-width:none}
+nav .in::-webkit-scrollbar{display:none}
+nav button{flex:0 0 auto;background:transparent;color:#cfd8ea;border:0;border-radius:6px;padding:9px 13px;font-size:14px;font-weight:700;cursor:pointer;white-space:nowrap}
+nav button.on{background:var(--yellow);color:var(--navy)}
+main{max-width:980px;margin:0 auto;padding:22px 16px 60px}
+section.tab{display:none;animation:fade .25s ease}
+section.tab.on{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+h2{font-size:clamp(24px,4.5vw,34px);line-height:1.1;margin:6px 0 14px;font-weight:900}
+h3{font-size:20px;margin:22px 0 8px;font-weight:700}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;margin:14px 0}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.box{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--blue);border-radius:10px;padding:14px 16px}
+.box h4{margin:0 0 6px;font-size:17px}
+.box p{margin:0;font-size:16px}
+.box.y{border-left-color:var(--yellow)} .box.r{border-left-color:var(--red)}
+.stats{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin:14px 0}
+.stat{background:var(--navy);color:#fff;border-radius:10px;padding:14px}
+.stat b{display:block;font-size:30px;line-height:1;color:var(--yellow);font-weight:900}
+.stat span{font-size:14px;font-family:Archivo,sans-serif;opacity:.9}
+.note{font-size:14px;color:var(--muted);font-family:Archivo,sans-serif}
+.callout{background:#fff8d6;border:1px solid #f0dc7a;color:#3b3000;border-radius:10px;padding:14px 16px;margin:14px 0}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .callout{background:#2b2610;border-color:#5c4f12;color:#f3e7b3}}
+:root[data-theme="dark"] .callout{background:#2b2610;border-color:#5c4f12;color:#f3e7b3}
+table{width:100%;border-collapse:collapse;font-size:15px;font-family:Archivo,sans-serif}
+th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+td b{color:var(--red)}
+.scroll{overflow-x:auto}
+.tl{position:relative;margin:10px 0 0 6px;padding-left:22px;border-left:3px solid var(--line)}
+.tl-item{position:relative;margin:0 0 18px}
+.tl-item:before{content:"";position:absolute;left:-31px;top:6px;width:15px;height:15px;border-radius:50%;background:var(--card);border:3px solid var(--blue)}
+.tl-item.done:before{background:var(--blue)}
+.tl-item.now:before{background:var(--red);border-color:var(--red);box-shadow:0 0 0 5px rgba(206,17,38,.18)}
+.tl-date{font-size:13px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.tl-item p{margin:2px 0 0}
+.steps{display:grid;gap:8px;counter-reset:s}
+.step{display:flex;gap:12px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.step:before{counter-increment:s;content:counter(s);flex:0 0 32px;height:32px;border-radius:50%;background:var(--navy);color:var(--yellow);font:900 16px Archivo,sans-serif;display:grid;place-items:center}
+.step.cur{border-color:var(--red)} .step.cur:before{background:var(--red);color:#fff}
+.voices{display:grid;gap:14px;grid-template-columns:1fr 1fr}
+@media (max-width:680px){.voices{grid-template-columns:1fr}}
+.side h3{margin-top:0;padding:8px 12px;border-radius:8px;color:#fff;font-size:17px}
+.side.gov h3{background:var(--gov)} .side.crit h3{background:var(--crit)}
+.voice{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:10px 0}
+.voice .who{font-family:Archivo,sans-serif;font-weight:700;font-size:14px}
+.voice .role{font-family:Archivo,sans-serif;font-size:12px;color:var(--muted)}
+.voice p{margin:6px 0 0;font-size:16px}
+figure{margin:14px 0;border-radius:12px;overflow:hidden;background:var(--card);border:1px solid var(--line)}
+figure img{display:block;width:100%;height:auto;max-height:420px;object-fit:cover}
+figcaption{font-size:12px;color:var(--muted);padding:8px 12px;font-family:Archivo,sans-serif}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font:700 15px Archivo,sans-serif;padding:11px 16px;border-radius:8px;border:0;cursor:pointer;background:var(--navy);color:#fff}
+.btn.y{background:var(--yellow);color:var(--navy)}
+.btn.wa{background:#1fa855;color:#fff}
+.btn.yt{background:#d0161d;color:#fff}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.chip{display:inline-block;font-size:12px;font-weight:700;padding:3px 9px;border-radius:999px;background:var(--line);color:var(--ink);margin:2px 4px 2px 0}
+details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:10px 0}
+summary{cursor:pointer;font:700 16px Archivo,sans-serif}
+details p{margin:8px 0 0}
+.quiz-q{font:700 18px Archivo,sans-serif;margin:0 0 12px}
+.opt{display:block;width:100%;text-align:left;background:var(--bg);color:var(--ink);border:2px solid var(--line);border-radius:10px;padding:12px 14px;margin:8px 0;font:500 16px Archivo,sans-serif;cursor:pointer}
+.opt.good{border-color:var(--ok);background:rgba(21,128,61,.12)}
+.opt.bad{border-color:var(--red);background:rgba(206,17,38,.1)}
+.qbar{height:6px;background:var(--line);border-radius:6px;overflow:hidden;margin-bottom:14px}
+.qbar i{display:block;height:100%;background:var(--yellow);transition:width .3s}
+ol.src{padding-left:20px;font-size:15px;font-family:Archivo,sans-serif}
+ol.src li{margin:6px 0}
+footer{background:var(--navy);color:#cfd8ea;text-align:center;padding:26px 16px;font:14px Archivo,sans-serif}
+footer b{color:var(--yellow)}
+.fab{position:fixed;right:16px;bottom:16px;z-index:30;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+.theme{position:absolute;top:12px;right:12px;z-index:2;background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:6px 12px;font:700 13px Archivo,sans-serif;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="flag"></div>
+<header class="hero">
+  <div class="hero-img" role="img" aria-label="Fachada del Capitolio Nacional, sede del Congreso, en Bogotá"></div>
+  <button class="theme" id="themeBtn" aria-label="Cambiar tema">◐ Tema</button>
+  <div class="hero-in">
+    <span class="kicker">Colombia · Proyecto de ley 2026</span>
+    <h1>El Estatuto Antiterrorista, explicado</h1>
+    <p class="lead">Qué propone el Gobierno, qué cambiaría para los grupos armados y para los ciudadanos, cómo va el trámite y qué dicen quienes lo apoyan y quienes lo critican. Para colombianos dentro y fuera del país.</p>
+    <div class="status">
+      <span class="pill warn">⚠ Aún NO es ley</span>
+      <span class="pill">Avalado por el Consejo de Política Criminal (15 oct)</span>
+      <span class="pill" id="clock">Hora Colombia</span>
+    </div>
+  </div>
+  <div class="credit">Foto: Capitolio Nacional, Bogotá · Wikimedia Commons</div>
+</header>
+
+<nav><div class="in" id="nav">
+  <button data-t="inicio" class="on">Inicio</button>
+  <button data-t="propone">Qué propone</button>
+  <button data-t="registro">El Registro</button>
+  <button data-t="penas">Penas y delitos</button>
+  <button data-t="tramite">Trámite</button>
+  <button data-t="voces">A favor y en contra</button>
+  <button data-t="exterior">Si vives afuera</button>
+  <button data-t="historia">Historia</button>
+  <button data-t="videos">Videos y fotos</button>
+  <button data-t="quiz">Ponte a prueba</button>
+  <button data-t="fuentes">Fuentes</button>
+</div></nav>
+
+<main>
+
+<!-- INICIO -->
+<section class="tab on" id="inicio">
+  <h2>En 30 segundos</h2>
+  <p>El Gobierno del presidente <b>Abelardo de la Espriella</b>, a través del ministro del Interior <b>Rodrigo Lara Restrepo</b>, preparó un proyecto de <b>ley estatutaria</b> llamado "Estatuto Antiterrorista". El borrador conocido tiene <b>más de 130 artículos en 116 páginas</b> y lo firman los ministerios del Interior, Defensa y Justicia.</p>
+  <p>Su idea central: crear una <b>lista oficial de organizaciones y personas terroristas</b> y, a partir de ella, aplicarles un régimen especial: congelar sus bienes, cerrarles la contratación con el Estado, subir penas y ofrecer rebajas a quien colabore.</p>
+  <div class="stats">
+    <div class="stat"><b>130+</b><span>artículos en el borrador</span></div>
+    <div class="stat"><b>42</b><span>años: pena máxima propuesta por asonada contra la Fuerza Pública</span></div>
+    <div class="stat"><b>60%</b><span>rebaja máxima para quien entregue información efectiva</span></div>
+    <div class="stat"><b>20 jun</b><span>2027: fecha límite para aprobarlo en el Congreso</span></div>
+  </div>
+  <div class="callout"><b>Ojo con lo que circula en redes.</b> Hoy es un <b>proyecto</b>. No se aplica a nadie todavía. Debe aprobarse en el Congreso con mayoría absoluta y luego pasar por la Corte Constitucional. El texto puede cambiar en cada debate, y distintos medios han reportado versiones con cifras distintas (por ejemplo, 94 o 130 artículos).</div>
+  <h3>¿Por qué ahora?</h3>
+  <p>El Gobierno lo presenta como el eje de su política de seguridad ("Patria Milagro") y como respuesta al aumento de ataques con drones y a las finanzas de los grupos armados: narcotráfico, extorsión y minería ilegal.</p>
+  <div class="stats">
+    <div class="stat"><b>119</b><span>ataques con drones en 2024</span></div>
+    <div class="stat"><b>277</b><span>ataques con drones en 2025</span></div>
+    <div class="stat"><b>318</b><span>ataques con drones entre enero y el 1 de oct de 2026</span></div>
+    <div class="stat"><b>95%</b><span>atribuidos al EMC y al ELN</span></div>
+  </div>
+  <p class="note">Cifras de la Fundación Ideas para la Paz con datos de la Fuerza Pública, citadas en el análisis de CESJUL. La Defensoría del Pueblo reporta 121 ataques entre enero y mayo de 2026, con 21 muertos y 145 heridos.</p>
+  <div class="btns">
+    <button class="btn y" data-go="propone">Ver qué propone →</button>
+    <button class="btn wa" onclick="share()">Compartir por WhatsApp</button>
+  </div>
+</section>
+
+<!-- PROPONE -->
+<section class="tab" id="propone">
+  <h2>Qué propone, punto por punto</h2>
+  <div class="grid">
+    <div class="box"><h4>📋 Registro Nacional de Organizaciones y Actores Terroristas</h4><p>Una lista oficial, pública y consultable. Quien entre queda sujeto a medidas financieras, administrativas y penales especiales.</p></div>
+    <div class="box y"><h4>🏦 Golpe a las finanzas</h4><p>Congelamiento de fondos y activos, incautación preventiva más rápida de bienes y destinación social de esos bienes. Bancos y notarías tendrían que consultar la lista.</p></div>
+    <div class="box r"><h4>⚖️ Nuevos delitos y más penas</h4><p>Drones con fines terroristas, apoyo material, entrenamiento, minería criminal, instrumentalización de civiles, asonadas contra la Fuerza Pública.</p></div>
+    <div class="box"><h4>🏛️ Alto Comisionado contra el Terrorismo</h4><p>Cargo nuevo adscrito a la Presidencia (Dapre), nombrado por el presidente por 5 años, sin reelección. Supervisaría la aplicación de la ley e informaría al Congreso.</p></div>
+    <div class="box y"><h4>🔒 Cárcel especial para cabecillas</h4><p>Pabellones de alta seguridad con restricciones estrictas de visitas para líderes de organizaciones incluidas en el registro.</p></div>
+    <div class="box r"><h4>🤝 Rebajas por colaborar</h4><p>Hasta 60% de rebaja de pena para quien entregue información efectiva que ayude a desarticular un grupo, antes de la acusación.</p></div>
+    <div class="box"><h4>🕵️ Inteligencia</h4><p>Expedientes de inteligencia con información de entidades del Consejo de Seguridad Nacional, ministerios, Fiscalía y la UIAF.</p></div>
+    <div class="box y"><h4>🛰️ Uso de la fuerza</h4><p>El borrador facilita el combate a los grupos listados con capacidades militares, incluidos bombardeos y ataques aéreos.</p></div>
+    <div class="box r"><h4>📜 Facultades extraordinarias</h4><p>Seis meses para que el presidente reglamente algunas herramientas nuevas, entre ellas la llamada aprehensión preventiva de bienes.</p></div>
+  </div>
+  <h3>¿Qué es "terrorismo" según el proyecto?</h3>
+  <p>El texto define el terrorismo como una conducta individual, grupal o colectiva que genere miedo, pánico y zozobra mediante riesgos, amenazas o violencia. Esta definición es uno de los puntos más debatidos: el Gobierno dice que apunta solo a organizaciones armadas; los críticos dicen que es demasiado amplia.</p>
+  <h3>Va de la mano con otra ley</h3>
+  <p>El estatuto está articulado con una <b>ley de sometimiento</b> (llamada "Ley de Acogimiento") que trabajan los ministerios de Justicia (Iván Cancino) e Interior. Las organizaciones del registro podrían salir de la lista si se acogen a ella. Según Semana, el paquete tendría dos normas: una ordinaria y una estatutaria.</p>
+  <h3>Lo que importa en la región minera</h3>
+  <p>El estatuto tipifica la minería ilegal vinculada a las finanzas de los grupos y, según Ámbito Jurídico, fija criterios de trazabilidad del oro. Es un punto relevante para zonas como el Bajo Cauca, el Nordeste y el sur de Córdoba.</p>
+</section>
+
+<!-- REGISTRO -->
+<section class="tab" id="registro">
+  <h2>El Registro: el corazón del estatuto</h2>
+  <p>El modelo se inspira, según la propia exposición de motivos, en la <b>Lista OFAC</b> del Tesoro de EE. UU. y en la designación de <b>Organizaciones Terroristas Extranjeras (FTO)</b>. Algunos sectores ya la llaman "Lista De la Espriella".</p>
+  <h3>¿Cómo se entra a la lista?</h3>
+  <div class="steps">
+    <div class="step"><div><b>Decisión del Consejo de Seguridad Nacional.</b> Máximo órgano asesor del presidente en seguridad: ministros de Relaciones Exteriores, Interior, Defensa, Hacienda, el director del Dapre y otros altos funcionarios.</div></div>
+    <div class="step"><div><b>Listas vinculantes de Naciones Unidas.</b></div></div>
+    <div class="step"><div><b>Designaciones de otros países</b> que Colombia reciba.</div></div>
+  </div>
+  <h3>¿Qué pasa si te incluyen?</h3>
+  <div class="grid">
+    <div class="box r"><h4>Bienes congelados</h4><p>Congelamiento de fondos, activos y recursos bancarios. Aprehensión preventiva de bienes.</p></div>
+    <div class="box r"><h4>Sin Estado</h4><p>No se puede contratar con el Estado ni recibir ciertos recursos públicos o subsidios.</p></div>
+    <div class="box r"><h4>Más pena</h4><p>Los delitos cometidos en relación con organizaciones listadas tienen penas aumentadas.</p></div>
+    <div class="box"><h4>Salida posible</h4><p>Exclusión del registro si la organización se acoge a la ley de sometimiento.</p></div>
+  </div>
+  <div class="callout"><b>El punto en disputa:</b> la inclusión en la lista la decide el Ejecutivo, no un juez. Para el Gobierno eso da rapidez frente a las finanzas criminales. Para la Sala Penal de la Corte Suprema, la oposición y analistas como Ámbito Jurídico, la aprehensión de bienes o la suspensión de organizaciones sin juez previo podría chocar con los artículos 34 y 39 de la Constitución.</div>
+</section>
+
+<!-- PENAS -->
+<section class="tab" id="penas">
+  <h2>Penas y delitos que propone</h2>
+  <div class="scroll"><table>
+    <thead><tr><th>Conducta</th><th>Lo que propone el borrador</th></tr></thead>
+    <tbody>
+      <tr><td>Fabricar, comprar o transportar drones con fines terroristas</td><td>Penas que podrían llegar a <b>30 años</b> (Blu Radio). Otra versión analizada habla de <b>10 a 20 años</b> por atacar con drones (Ámbito Jurídico).</td></tr>
+      <tr><td>Retener, cercar o desarmar a miembros de la Fuerza Pública en manifestaciones (asonada)</td><td>Hasta <b>42 años</b>. La pena se multiplica si es contra la Fuerza Pública o en coordinación con una organización listada.</td></tr>
+      <tr><td>Apoyo material a organizaciones terroristas</td><td><b>13 a 22 años</b> (según CESJUL).</td></tr>
+      <tr><td>Drones armados, extorsión, delitos informáticos, secuestro y asonadas vinculados a estructuras criminales</td><td>Aumento de hasta <b>una tercera parte</b> de la pena.</td></tr>
+      <tr><td>Terrorismo, financiación o apoyo material cometidos en el extranjero</td><td>Podrían investigarse y sancionarse en Colombia.</td></tr>
+      <tr><td>Colaboración eficaz antes de la acusación</td><td>Rebaja de hasta <b>60%</b>.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">Las cifras salen de borradores filtrados y de lo explicado por el Gobierno. Pueden cambiar durante los debates. Hoy el Código Penal ya tiene delitos de terrorismo (artículos 340 a 345) y la Ley 1121 de 2006 ya obliga a reportar organizaciones terroristas a la ONU.</p>
+  <h3>¿Y la protesta social?</h3>
+  <p>El Gobierno insiste en que el estatuto no criminaliza la protesta pacífica y que va dirigido a grupos armados. La oposición teme que la figura de asonada y la definición amplia de terrorismo terminen aplicándose a manifestantes. En paralelo, el ministro Lara anunció la reforma al decreto 003 sobre protesta, con el objetivo declarado de garantizar la protesta pacífica y focalizar los puntos de violencia.</p>
+</section>
+
+<!-- TRÁMITE -->
+<section class="tab" id="tramite">
+  <h2>¿En qué va? Línea de tiempo</h2>
+  <div class="tl">
+    <div class="tl-item done"><div class="tl-date">4 sep 2026</div><p>El ministro Lara anuncia en el Congreso que el Gobierno prepara un estatuto con lista de organizaciones terroristas y medidas penales, penitenciarias y financieras.</p></div>
+    <div class="tl-item done"><div class="tl-date">7 oct 2026</div><p>Se filtra el borrador: 116 páginas, más de 130 artículos. Iván Cepeda y Juan Fernando Cristo lo cuestionan.</p></div>
+    <div class="tl-item done"><div class="tl-date">8 oct 2026</div><p>El Gobierno lo socializa ante el Consejo de Política Criminal; la sesión de votación se aplaza al 15 de octubre.</p></div>
+    <div class="tl-item done"><div class="tl-date">12 oct 2026</div><p>En alocución, el presidente De la Espriella anuncia que lo radicará y lo llama "una vacuna contra la delincuencia".</p></div>
+    <div class="tl-item done"><div class="tl-date">Semana del 12 oct</div><p>Los ministros Lara y Cancino radican ante la Cámara la Ley de Acogimiento (sometimiento), ley hermana del estatuto.</p></div>
+    <div class="tl-item done"><div class="tl-date">15 oct 2026</div><p>En sesión reservada, el Consejo de Política Criminal le da aval mayoritario. La Sala Penal de la Corte Suprema hace observaciones sobre la lista y el Alto Comisionado.</p></div>
+    <div class="tl-item done"><div class="tl-date">17 oct 2026</div><p>El presidente del Senado, Honorio Henríquez, respalda el proyecto y promete trámite con garantías. El texto pasa por la Secretaría Jurídica de Presidencia antes de su radicación formal.</p></div>
+    <div class="tl-item now"><div class="tl-date">Ahora</div><p>Pendiente de radicación formal del estatuto en el Congreso, según los reportes más recientes consultados (17 oct).</p></div>
+  </div>
+  <h3>El camino que le falta</h3>
+  <div class="steps">
+    <div class="step cur"><div><b>Radicación</b> por el Ministerio del Interior.</div></div>
+    <div class="step"><div><b>Comisiones primeras</b> de Senado y Cámara.</div></div>
+    <div class="step"><div><b>Plenarias</b> de Senado y Cámara, con <b>mayoría absoluta</b>.</div></div>
+    <div class="step"><div><b>Una sola legislatura</b>: debe aprobarse antes del <b>20 de junio de 2027</b>.</div></div>
+    <div class="step"><div><b>Revisión previa de la Corte Constitucional</b>, que verifica que respete la Constitución.</div></div>
+    <div class="step"><div><b>Sanción presidencial</b> y entrada en vigor.</div></div>
+  </div>
+  <p class="note">Al ser ley estatutaria (regula derechos fundamentales), su trámite es más exigente que el de una ley ordinaria.</p>
+</section>
+
+<!-- VOCES -->
+<section class="tab" id="voces">
+  <h2>A favor y en contra</h2>
+  <p>Presentamos los argumentos de ambos lados para que cada quien saque sus conclusiones.</p>
+  <div class="voices">
+    <div class="side gov">
+      <h3>👍 Quienes lo defienden</h3>
+      <div class="voice"><div class="who">Rodrigo Lara Restrepo</div><div class="role">Ministro del Interior</div><p>Dice que no es un estatuto arbitrario, que no perseguirá a políticos que piensen distinto y que la oposición, los partidos y los expresidentes no tienen nada que temer. Afirma que la ONU (Unodc) y el Departamento de Estado revisaron el texto.</p></div>
+      <div class="voice"><div class="who">Abelardo de la Espriella</div><div class="role">Presidente de la República</div><p>Lo presenta como una herramienta para recuperar la seguridad y asegura que la oposición tendrá plenas garantías para criticarlo.</p></div>
+      <div class="voice"><div class="who">Honorio Henríquez</div><div class="role">Presidente del Senado</div><p>Lo califica de herramienta urgente e inaplazable contra el crimen organizado y promete un trámite con garantías.</p></div>
+      <div class="voice"><div class="who">Ana Ligia Mora</div><div class="role">Representante, Centro Democrático</div><p>Lo respalda como herramienta para restablecer el orden y la autoridad; su bancada propondrá ajustes en el debate.</p></div>
+      <div class="voice"><div class="who">Argumento de fondo</div><div class="role">Defensores del proyecto</div><p>Hoy Colombia tiene el delito de terrorismo pero no una definición legal de "organización terrorista" ni una lista con efectos jurídicos. El estatuto llenaría ese vacío y atacaría el dinero de los grupos.</p></div>
+    </div>
+    <div class="side crit">
+      <h3>👎 Quienes lo critican</h3>
+      <div class="voice"><div class="who">Iván Cepeda</div><div class="role">Senador, Pacto Histórico</div><p>Sostiene que la definición de terrorismo es tan amplia que podría criminalizar la protesta social, y rechaza que el presidente pueda incluir personas en una lista sin decisión judicial. Lo describe como la sustitución de la democracia por un régimen autoritario.</p></div>
+      <div class="voice"><div class="who">Alejandro Ocampo</div><div class="role">Senador, Pacto Histórico</div><p>Apoya el nuevo delito de drones, pero advierte riesgos para la oposición, estudiantes y la protesta, y teme concentración de poder en el Ejecutivo.</p></div>
+      <div class="voice"><div class="who">Juan Fernando Cristo</div><div class="role">Exministro del Interior</div><p>Le preocupa el impacto en derechos humanos y el riesgo de que se use para perseguir a la oposición.</p></div>
+      <div class="voice"><div class="who">Aída Quilcué</div><div class="role">Senadora</div><p>Plantea que la seguridad debe ir de la mano de las garantías democráticas y el respeto a los derechos humanos.</p></div>
+      <div class="voice"><div class="who">Sala Penal, Corte Suprema</div><div class="role">En el Consejo de Política Criminal</div><p>Hizo observaciones técnicas sobre la lista oficial y la figura del Alto Comisionado, que no existe hoy en el ordenamiento.</p></div>
+      <div class="voice"><div class="who">Analistas jurídicos</div><div class="role">Ámbito Jurídico · CESJUL</div><p>Señalan artículos con riesgo constitucional (bienes sin juez, tutela contra operaciones militares enviada al Consejo de Estado, facultades extraordinarias) y problemas de técnica legislativa. Recuerdan que la prisa hundió el intento de 2003.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXTERIOR -->
+<section class="tab" id="exterior">
+  <h2>Para colombianos en el exterior</h2>
+  <p>Si vives en España, Estados Unidos, Reino Unido, Chile o cualquier otro país, esto es lo que conviene saber:</p>
+  <details open><summary>🌎 ¿Me afecta si vivo fuera?</summary><p>El estatuto aún no es ley. Si se aprueba, quien no tenga vínculos con organizaciones armadas no debería verse afectado. Lo que sí cambia es el alcance: el proyecto permite investigar en Colombia hechos de terrorismo, financiación o apoyo material ocurridos en el extranjero.</p></details>
+  <details><summary>💸 ¿Y las remesas que envío a mi familia?</summary><p>El proyecto obliga a bancos, notarías y otros sectores a consultar el registro en sus procesos de debida diligencia. En la práctica, se bloquearían operaciones con personas u organizaciones listadas. Para envíos normales entre familiares no se ha anunciado ningún cambio.</p></details>
+  <details><summary>🗳️ ¿Puedo opinar o participar?</summary><p>Sí. Los proyectos de ley se pueden seguir en las páginas del Senado y la Cámara, y los congresistas reciben comentarios ciudadanos. Los colombianos en el exterior tienen representación propia en la Cámara (circunscripción internacional).</p></details>
+  <details><summary>🌐 ¿Por qué se compara con EE. UU.?</summary><p>El registro se inspira en la Lista OFAC y en las designaciones FTO de EE. UU. Además, una lista colombiana podría alimentarse de designaciones de otros países que Colombia reciba.</p></details>
+  <details><summary>📱 ¿Cómo no caer en noticias falsas?</summary><p>Desconfía de cadenas que digan que "ya es ley" o que dan penas exactas para la protesta pacífica. Revisa la fecha, la fuente y si el texto citado es el borrador o el aprobado. Abajo en "Fuentes" están los enlaces originales.</p></details>
+</section>
+
+<!-- HISTORIA -->
+<section class="tab" id="historia">
+  <h2>No es la primera vez</h2>
+  <div class="tl">
+    <div class="tl-item done"><div class="tl-date">1978 · Julio César Turbay</div><p>Estatuto de Seguridad, expedido por <b>decreto</b> en medio de una crisis de orden público. Recordado por denuncias de abusos.</p></div>
+    <div class="tl-item done"><div class="tl-date">2003 · Álvaro Uribe</div><p>El Congreso aprobó el Acto Legislativo 02 de 2003, que modificaba cuatro artículos de la Constitución para ampliar facultades contra el terrorismo.</p></div>
+    <div class="tl-item done"><div class="tl-date">2004 · Corte Constitucional</div><p>La Corte tumbó ese estatuto por vicios de trámite y por afectar la separación de poderes.</p></div>
+    <div class="tl-item now"><div class="tl-date">2026 · Abelardo de la Espriella</div><p>Esta vez es un proyecto de <b>ley estatutaria</b>, con debate en el Congreso y control previo de la Corte, no un decreto.</p></div>
+  </div>
+  <figure>
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/El_Capitolio_Nacional_(Bogot%C3%A1,_Colombia)_1.jpg?width=1000" alt="Capitolio Nacional, sede del Congreso de Colombia" loading="lazy" onerror="this.parentNode.style.display='none'">
+    <figcaption>El Capitolio Nacional, donde se debatirá el estatuto. Foto: Ricardo Souza Lima (Rikimedia), Wikimedia Commons.</figcaption>
+  </figure>
+</section>
+
+<!-- VIDEOS Y FOTOS -->
+<section class="tab" id="videos">
+  <h2>Videos y fotos</h2>
+  <p>Para ver los videos más recientes de noticieros y del Congreso sobre el estatuto, abre estas búsquedas en vivo. Siempre muestran lo último publicado.</p>
+  <div class="btns">
+    <a class="btn yt" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=estatuto+antiterrorista+Colombia&sp=CAI%253D">▶ Videos recientes en YouTube</a>
+    <a class="btn yt" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Rodrigo+Lara+estatuto+antiterrorista">▶ Ministro Lara explica</a>
+    <a class="btn yt" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Cepeda+estatuto+antiterrorista">▶ Críticas de la oposición</a>
+    <a class="btn ghost" target="_blank" rel="noopener" href="https://www.youtube.com/@CanalCongresoColombia/videos">Canal Congreso</a>
+  </div>
+  <h3>Galería</h3>
+  <figure>
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Fachada_Capitolio.jpg?width=1200" alt="Fachada del Capitolio Nacional" loading="lazy" onerror="this.parentNode.style.display='none'">
+    <figcaption>Fachada del Capitolio Nacional, Plaza de Bolívar, Bogotá. Wikimedia Commons.</figcaption>
+  </figure>
+  <figure>
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/CapitolioNacionalDeColombia2004-7.jpg" alt="Capitolio Nacional de Colombia visto desde la Plaza de Bolívar" loading="lazy" onerror="this.parentNode.style.display='none'">
+    <figcaption>Capitolio Nacional, 2004. Foto: Kinori, dominio público, Wikimedia Commons.</figcaption>
+  </figure>
+  <figure>
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Estatua_de_la_plaza_de_Bol%C3%ADvar_en_Bogot%C3%A1.JPG?width=1000" alt="Estatua de Simón Bolívar en la Plaza de Bolívar" loading="lazy" onerror="this.parentNode.style.display='none'">
+    <figcaption>Estatua de Bolívar frente al Capitolio. Wikimedia Commons.</figcaption>
+  </figure>
+</section>
+
+<!-- QUIZ -->
+<section class="tab" id="quiz">
+  <h2>¿Cuánto sabes del estatuto?</h2>
+  <div class="card" id="quizBox"></div>
+</section>
+
+<!-- FUENTES -->
+<section class="tab" id="fuentes">
+  <h2>Fuentes</h2>
+  <p>Toda la información de esta app sale de medios y análisis publicados entre septiembre y octubre de 2026. Los resúmenes son propios.</p>
+  <ol class="src">
+    <li><a target="_blank" rel="noopener" href="https://www.infobae.com/colombia/2026/10/16/estatuto-antiterrorista-recibio-el-aval-del-consejo-de-politica-criminal-el-gobierno-se-alista-para-su-radicacion-en-el-congreso/">Infobae — Aval del Consejo de Política Criminal (16 oct)</a></li>
+    <li><a target="_blank" rel="noopener" href="https://www.infobae.com/colombia/2026/10/17/presidente-del-congreso-respaldo-el-estatuto-antiterrorista-tras-el-aval-del-consejo-de-politica-criminal-iniciativa-urgente-e-inaplazable/">Infobae — Respaldo del presidente del Congreso (17 oct)</a></li>
+    <li><a target="_blank" rel="noopener" href="https://www.eltiempo.com/politica/congreso/presidente-del-congreso-ratifica-respaldo-al-estatuto-antiterrorista-del-gobierno-de-la-espriella-y-promete-un-tramite-con-plenas-garantias-3594280">El Tiempo — Henríquez promete trámite con garantías</a></li>
+    <li><a target="_blank" rel="noopener" href="https://www.eluniversal.com.co/colombia/2026/10/17/congreso-espera-el-estatuto-antiterrorista-que-contempla-nuevos-delitos-y-sanciones/">El Universal — Congreso espera el estatuto (17 oct)</a></li>
+    <li><a target="_blank" rel="noopener" href="https://www.eluniversal.com.co/colombia/2026/10/06/estatuto-antiterrorista-estos-son-los-cambios-que-propone-el-gobierno-de-la-espriella/">El Universal — Los cambios que propone (7 oct)</a></li>
+    <li><a target="_blank" rel="noopener" href="https://www.semana.com/politica/articulo/una-vacuna-contra-la-delincuencia-abelardo-de-la-espriella-anuncia-radicacion-del-estatuto-antiterrorista-en-el-congreso/202638/">Semana — "Una vacuna contra la delincuencia" (12 oct)</a></li>
+    <li><a target="_blank" rel="noopener" href="https://elmeridiano.co/cordoba/pais/estatuto-antiterrorista-fue-radicado-ante-el-congreso-02vdbg">El Meridiano — Radicación de la Ley de Acogimiento</a></li>
+    <li><a target="_blank" rel="noopener" href="https://www.lasillavacia.com/en-vivo/gobierno-presenta-estatuto-antiterrorista-su-gran-apuesta-en-seguridad/">La Silla Vacía — Su gran apuesta en seguridad</a></li>
+    <li><a target="_blank" rel="noopener" href="https://www.lasillavacia.com/silla-nacional/las-claves-del-estatuto-antiterrorista-del-gobierno-de-la-espriella/">La Silla Vacía — Las claves del estatuto</a></li>
+    <li><a target="_blank" rel="noopener" href="https://www.bluradio.com/nacion/imponer-la-autoridad-vs-abelardo-sera-fiscal-y-juez-estatuto-antiterrorista-divide-opiniones-pr30">Blu Radio — El estatuto divide opiniones</a></li>
+    <li><a target="_blank" rel="noopener" href="https://www.elpais.com.co/colombia/estatuto-antiterrorista-choque-entre-quienes-piden-mano-dura-y-quienes-temen-concentracion-de-poder-0841.html">El País Cali — Mano dura vs. concentración de poder</a></li>
+    <li><a target="_blank" rel="noopener" href="https://www.vanguardia.com/colombia/2026/10/09/gobierno-prepara-estatuto-antiterrorista-con-nuevas-facultades-y-una-lista-de-sancionados/">Vanguardia — Nuevas facultades y lista de sancionados</a></li>
+    <li><a target="_blank" rel="noopener" href="https://www.ambitojuridico.com/noticias/penal/analisis-lo-que-debe-saber-del-estatuto-antiterrorista">Ámbito Jurídico — Lo que debe saber (análisis)</a></li>
+    <li><a target="_blank" rel="noopener" href="https://cesjul.org/estatuto-antiterrorista-en-colombia-seguridad-con-garantias-o-excepcion-permanente/">CESJUL — ¿Seguridad con garantías o excepción permanente?</a></li>
+    <li><a target="_blank" rel="noopener" href="https://cambiocolombia.com/poder/articulo/2026/10/los-temores-que-genera-el-proyecto-de-estatuto-antiterrorista-del-gobierno-de-la-espriella">Cambio — Los temores que genera el proyecto</a></li>
+    <li><a target="_blank" rel="noopener" href="https://www.asuntoslegales.com.co/actualidad/cepeda-cuestiono-borrador-del-estatuto-antiterrorista-por-riesgo-de-regimen-4498608">Asuntos Legales — Cepeda y Cristo cuestionan el borrador</a></li>
+    <li><a target="_blank" rel="noopener" href="https://www.prensa-latina.cu/2026/10/16/colombia-consejo-de-politica-criminal-avala-estatuto-antiterrorista/">Prensa Latina — Aval y críticas (16 oct)</a></li>
+    <li><a target="_blank" rel="noopener" href="https://www.las2orillas.co/casi-medio-siglo-despues-de-la-espriella-vuelve-a-poner-sobre-la-mesa-el-estatuto-de-seguridad/">Las2orillas — Del Estatuto de Seguridad de 1978 al de 2026</a></li>
+    <li><a target="_blank" rel="noopener" href="https://www.eje21.com.co/2026/09/el-gobierno-colombiano-alista-un-estatuto-antiterrorista-para-combatir-a-grupos-armados/">EFE vía Eje21 — Primer anuncio (4 sep)</a></li>
+    <li><a target="_blank" rel="noopener" href="https://www.infodefensa.com/texto-diario/mostrar/6045083/215-colombia-estatuto-antiterrorista-colombiano-hacia-arquitectura-integral-neutralizacion-terrorismo">Infodefensa — Hacia una arquitectura integral</a></li>
+  </ol>
+  <p class="note">Fotos: Wikimedia Commons (licencias libres, créditos en cada imagen). Información actualizada al <span id="upd">20 de octubre de 2026</span>, hora de Colombia.</p>
+</section>
+
+</main>
+
+<button class="btn wa fab" onclick="share()" aria-label="Compartir por WhatsApp">Compartir</button>
+
+<footer>
+  <div class="flag" style="max-width:120px;margin:0 auto 14px;border-radius:3px"></div>
+  App ciudadana de <b>Vibras Positivas HM</b> · Caucasia, Antioquia<br>
+  Información con fines pedagógicos. No es asesoría legal.<br>
+  <span style="opacity:.75">© 2026 · Hecho para colombianos en Colombia y en el mundo</span>
+</footer>
+
+<script>
+// Tabs
+const tabs=[...document.querySelectorAll('section.tab')], navBtns=[...document.querySelectorAll('#nav button')];
+function go(id){
+  tabs.forEach(t=>t.classList.toggle('on',t.id===id));
+  navBtns.forEach(b=>{const on=b.dataset.t===id;b.classList.toggle('on',on);if(on)b.scrollIntoView({inline:'center',block:'nearest',behavior:'smooth'});});
+  const nav=document.querySelector('nav');
+  window.scrollTo({top:nav.offsetTop,behavior:'smooth'});
+  try{history.replaceState(null,'','#'+id)}catch(e){}
+}
+navBtns.forEach(b=>b.onclick=()=>go(b.dataset.t));
+document.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>go(b.dataset.go));
+if(location.hash&&document.getElementById(location.hash.slice(1)))go(location.hash.slice(1));
+
+// Reloj hora Colombia
+function tick(){
+  const f=new Intl.DateTimeFormat('es-CO',{timeZone:'America/Bogota',weekday:'short',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'});
+  document.getElementById('clock').textContent='🇨🇴 '+f.format(new Date());
+}
+tick();setInterval(tick,30000);
+
+// Tema
+const root=document.documentElement;
+try{const t=localStorage.getItem('theme');if(t)root.dataset.theme=t;}catch(e){}
+document.getElementById('themeBtn').onclick=()=>{
+  const dark=root.dataset.theme? root.dataset.theme==='dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+  root.dataset.theme=dark?'light':'dark';
+  try{localStorage.setItem('theme',root.dataset.theme)}catch(e){}
+};
+
+// Compartir
+function share(){
+  const txt='🇨🇴 *Estatuto Antiterrorista de Colombia, explicado*\nQué propone, penas, el registro, cómo va en el Congreso y qué dicen ambos lados. Con fuentes.\n👉 '+location.href.split('#')[0];
+  if(navigator.share){navigator.share({title:'Estatuto Antiterrorista explicado',text:txt}).catch(()=>{});}
+  else window.open('https://wa.me/?text='+encodeURIComponent(txt),'_blank');
+}
+
+// Quiz
+const Q=[
+ {q:'¿El Estatuto Antiterrorista ya es ley en Colombia?',o:['Sí, desde octubre de 2026','No, es un proyecto que debe pasar por el Congreso y la Corte','Sí, por decreto presidencial'],a:1,e:'Es un proyecto de ley estatutaria. Necesita mayoría absoluta en el Congreso y revisión previa de la Corte Constitucional.'},
+ {q:'¿Cuál es el eje central del estatuto?',o:['Un Registro Nacional de Organizaciones y Actores Terroristas','Una reforma tributaria','La eliminación de la Fiscalía'],a:0,e:'De la lista se desprenden las medidas financieras, administrativas y penales.'},
+ {q:'¿Quién decidiría principalmente quién entra a la lista?',o:['Un juez penal','El Consejo de Seguridad Nacional (además de listas de la ONU y de otros países)','La Registraduría'],a:1,e:'Es uno de los puntos más criticados: la inclusión no requiere decisión judicial previa.'},
+ {q:'¿Hasta cuánto podría rebajarse la pena a quien entregue información efectiva?',o:['20%','40%','60%'],a:2,e:'Hasta 60%, si colabora antes de la acusación.'},
+ {q:'¿Por cuánto tiempo sería nombrado el Alto Comisionado contra el Terrorismo?',o:['4 años, reelegible','5 años, sin reelección','De por vida'],a:1,e:'Lo nombraría el presidente, adscrito al Dapre, por cinco años sin reelección.'},
+ {q:'¿Qué pasó con el estatuto antiterrorista de 2003?',o:['Sigue vigente','La Corte Constitucional lo tumbó en 2004','Nunca se presentó'],a:1,e:'La Corte lo tumbó por vicios de trámite y por afectar la separación de poderes.'},
+ {q:'¿Hasta cuándo tiene el Congreso para aprobarlo?',o:['20 de junio de 2027','31 de diciembre de 2026','No hay límite'],a:0,e:'Las leyes estatutarias deben aprobarse en una sola legislatura.'}
+];
+let qi=0,score=0;
+function renderQ(){
+  const box=document.getElementById('quizBox');
+  if(qi>=Q.length){
+    const msg=score===Q.length?'¡Excelente! Ya puedes explicarlo a tu familia.':score>=4?'¡Muy bien! Repasa las secciones que fallaste.':'Vale la pena repasar la app y volver a intentarlo.';
+    box.innerHTML='<p class="quiz-q">Resultado: '+score+' de '+Q.length+'</p><p>'+msg+'</p><div class="btns"><button class="btn y" onclick="qi=0;score=0;renderQ()">Repetir</button><button class="btn wa" onclick="share()">Retar a un amigo</button></div>';
+    return;
+  }
+  const it=Q[qi];
+  box.innerHTML='<div class="qbar"><i style="width:'+(qi/Q.length*100)+'%"></i></div><p class="note">Pregunta '+(qi+1)+' de '+Q.length+'</p><p class="quiz-q">'+it.q+'</p>'+it.o.map((o,i)=>'<button class="opt" data-i="'+i+'">'+o+'</button>').join('')+'<div id="qexp"></div>';
+  box.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{
+    const i=+b.dataset.i; box.querySelectorAll('.opt').forEach(x=>x.disabled=true);
+    box.querySelectorAll('.opt')[it.a].classList.add('good');
+    if(i===it.a)score++; else b.classList.add('bad');
+    document.getElementById('qexp').innerHTML='<p>'+(i===it.a?'✅ ':'❌ ')+it.e+'</p><button class="btn" id="nx">Siguiente →</button>';
+    document.getElementById('nx').onclick=()=>{qi++;renderQ();};
+  });
+}
+renderQ();
+
+// PWA
+if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));}
+</script>
+</body>
+</html>
